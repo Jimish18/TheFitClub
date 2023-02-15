@@ -10,6 +10,8 @@ import './Hero.css'
 const Hero = () => {
   return (
     <div className="hero">
+
+      <div className="blur blur-h"></div>
       <div className="left-h">
         <Header/>
 

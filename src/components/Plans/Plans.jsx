@@ -7,6 +7,9 @@ const Plans = () => {
   return (
     <div className="Plans" id="plans">
 
+        <div className="blur blur-p1"></div>
+        <div className="blur blur-p2"></div>
+
         <div className="programs-header">
             <span className='stroke-text'>READY TO START</span>
             <span>YOUR JOURNEY</span>
