@@ -3,11 +3,14 @@ import './Testimonials.css'
 import {testimonialsData} from '../../data/testimonialsData';
 import leftArrow from '../../assets/leftArrow.png'
 import rightArrow from '../../assets/rightArrow.png'
+import { motion } from 'framer-motion';
 
 const Testimonials = () => {
 
     const [selected,setSelected] = useState(0);
     const tLength = testimonialsData.length;
+
+    const transtion = { type : 'spring' , duration : 2};
 
   return (
     <div className="Testimonials">
@@ -17,9 +20,15 @@ const Testimonials = () => {
             <span className='stroke-text'>What they</span>
             <span>Say about us</span>
 
-            <span>
+            <motion.span
+            key={selected}
+            initial = {{opacity : 0 , x : -50}}
+            animate = {{opacity : 1, x : 0}}
+            exit = {{opacity : 0 , x : 50}}
+            transition = {{...transtion,duration : 1}}
+            >
                 {testimonialsData[selected].review}
-            </span>
+            </motion.span>
 
             <span>
                 <span style={{color : 'var(--orange)'}}>
@@ -30,9 +39,24 @@ const Testimonials = () => {
         </div>
 
         <div className="right-t">
-            <div></div>
-            <div></div>
-            <img src={testimonialsData[selected].image} alt="image" />
+            <motion.div
+            initial = {{opacity : 0 , x : -50 , y : -50}}
+            whileInView = {{opacity : 1 , x : 0 , y : 0}}
+            transition = {transtion}
+            ></motion.div>
+            <motion.div
+            initial = {{opacity : 0 , x : 50 , y : 50}}
+            whileInView = {{opacity : 1 , x : 0 , y : 0}}
+            transition = {transtion}
+            ></motion.div>
+
+            <motion.img 
+            key={selected}
+            initial = {{opacity : 0 , x : 100}}
+            animate = {{opacity : 1 , x : 0}}
+            exit = {{opacity : 0 , x : -100}}
+            transition = {{...transtion,duration : 1}}
+            src={testimonialsData[selected].image} alt="image" />
 
             <div className="arrows">
                 <img 
