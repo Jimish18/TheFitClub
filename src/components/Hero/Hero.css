@@ -218,6 +218,26 @@
     font-size: 1.5rem;
 }
 
+@media screen and (max-width : 1440px)
+{
+    .hero
+    {
+        flex-direction: column;
+    }
+
+    .hero-image
+    {
+        position: relative;
+        left: 5rem;
+        top: 0;
+    }
+
+    .calories
+    {
+        position: relative;
+    }
+}
+
 
 
 
