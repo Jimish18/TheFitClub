@@ -23,3 +23,45 @@
     border-radius: 20%;
     margin: -10px 0;
 }
+
+.left-j>:nth-child(2),
+.left-j>:nth-child(3)
+{
+    display: flex;
+    gap: 1rem;
+}
+
+.right-j
+{
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+}
+
+.email-container
+{
+    display: flex;
+    gap: 3rem;
+    background-color: gray;
+    padding: 1rem;
+}
+
+.email-container>input
+{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: var(--lightgray);
+}
+
+
+::placeholder
+{
+    color: var(--lightgray);
+}
+
+.btn-j
+{
+    background-color: var(--orange);
+    color: white;
+}
