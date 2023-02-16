@@ -13,7 +13,7 @@ const Testimonials = () => {
     const transtion = { type : 'spring' , duration : 2};
 
   return (
-    <div className="Testimonials">
+    <div className="Testimonials" id='tesimonials'>
 
         <div className="left-t">
             <span>Testimonials</span>

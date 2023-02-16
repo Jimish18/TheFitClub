@@ -101,3 +101,27 @@
 {
     color: var(--orange);
 }
+
+
+@media screen and (max-width : 1150px)  
+{
+    .plans-card
+    {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .plan:nth-child(2)
+    {
+        background: var(--planCard);
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width : 830px)  
+{
+    .programs-header
+    {
+        font-size: 1rem;
+    }
+}

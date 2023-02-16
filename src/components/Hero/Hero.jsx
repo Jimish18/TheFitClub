@@ -16,7 +16,7 @@ const Hero = () => {
   
 
   return (
-    <div className="hero">
+    <div className="hero" id='Hero'>
 
       <div className="blur blur-h"></div>
       <div className="left-h">

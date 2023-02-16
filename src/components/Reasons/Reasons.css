@@ -107,3 +107,19 @@
 {
     width: 2.5rem;
 }
+
+@media screen and (max-width : 1300px)  
+{
+    .Reasons
+    {
+        display: flex;
+        gap: 1.5rem;
+        flex-direction: column;
+    }
+
+    .left-r 
+    {
+        width: fit-content;
+        margin: auto;
+    }
+}

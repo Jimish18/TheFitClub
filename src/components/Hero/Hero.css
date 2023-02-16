@@ -239,6 +239,106 @@
     }
 }
 
+.hero-text
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: white;
+    text-overflow: inherit;
+}
+
+@media screen and (max-width : 830px)
+{
+    .hero-text
+    {        
+        font-size: 3rem;
+    }   
+
+    .figures>div>span:nth-of-type(1)
+    {
+        font-size: 1.5rem;
+    }
+
+    .heart-rate 
+    {
+        gap: 0.7rem;
+    }
+
+    .hero-image 
+    {
+        width: 15rem;
+        z-index: 5;
+    }
+
+    .hero-image-back 
+    {
+        top: 1rem;
+        right: 20rem;
+        z-index: 0;
+        width: 11rem;
+    }
+
+    .right-h>.btn 
+    {        
+        top: 1rem;
+    }
+
+    .heart-rate 
+    {
+        top: 4rem;
+    }
+
+    .calories 
+    {
+        top: 14rem;
+    }
+
+    
+}
+
+@media screen and (max-width : 700px)
+{
+    .hero-image-back
+    {
+        display: none;
+    }
+
+    .heart-rate>img 
+    {
+        width: 1.5rem;
+    }
+
+    .heart-rate>:nth-child(3) 
+    {
+        font-size: 1.1rem;
+    }
+
+    .calories > img {
+        width: 1.5rem;
+    }
+
+    .calories {
+        gap: 1rem;
+    }
+
+    .calories>div>:nth-child(1) {
+        font-size: 0.7rem;
+    }
+
+    .calories>div>:nth-child(2) {
+        font-size: 1rem;
+    }
+
+    .hero-image
+    {
+        left: 1rem;
+    }
+}
+
 
 
 
