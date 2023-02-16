@@ -234,7 +234,8 @@
 
     .calories
     {
-        position: relative;
+        top: 25rem;
+        right: 5rem;
     }
 }
 

@@ -12,6 +12,9 @@ const Hero = () => {
 
   const transition = {type : 'spring' , duration : 2}
 
+  let tablet = (window.innerWidth > 1440 ) ? false : true;
+  
+
   return (
     <div className="hero">
 
@@ -95,8 +98,8 @@ const Hero = () => {
 
         {/* Calories */}
         <motion.div 
-        initial = {{right : '38rem'}}
-        whileInView = {{right : '28rem'}}
+        initial = {(tablet === true) ? {right : '-10rem'} : {right : '38rem'}}
+        whileInView = {(tablet === true) ? {right : '3rem'} : {right : '28rem'}}
         transition = {transition}
         className="calories">
           <img src={Calories} alt="Calories Graph" />
