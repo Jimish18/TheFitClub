@@ -90,6 +90,62 @@
     cursor: pointer;
 }
 
+@media screen and (max-width : 1420px)
+{
+    .arrows
+    {
+        left: 0rem;
+    }
+}
+
+@media screen and (max-width : 1320px)
+{
+    .Testimonials
+    {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .left-t>:nth-child(2), 
+    .left-t>:nth-child(3) 
+    {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .right-t
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .right-t>div
+    {
+        position: relative;
+        display: none;
+    }
+
+    .right-t>img
+    {
+        top: 0;
+        right: 0;
+        position: relative;
+        align-items: center;
+        width: 15rem;
+        height: 18rem;
+    }
+
+    .right-t>:last-child
+    {
+        display: flex;
+        left: 0;
+        bottom: 0;
+    }
+}
+
 
 
 

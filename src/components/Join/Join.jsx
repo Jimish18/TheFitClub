@@ -22,16 +22,16 @@ const Join = () => {
 
       <div className="left-j">
 
-          <hr />
-          <div>
-            <span className='stroke-text'>ready to</span>
-            <span>level up</span>
-          </div>
+        <hr />
+        <div>
+          <span className='stroke-text'>ready to</span>
+          <span>level up</span>
+        </div>
 
-          <div>
-            <span>your body</span>
-            <span className='stroke-text'>with us ?</span>
-          </div>
+        <div>
+          <span>your body</span>
+          <span className='stroke-text'>with us ?</span>
+        </div>
 
       </div>
       <div className="right-j">

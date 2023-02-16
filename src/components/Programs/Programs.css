@@ -94,3 +94,13 @@
         font-size: 1.3rem;
     }
 }
+
+@media screen and (max-width : 600px)  
+{
+    .programs-header
+    {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}

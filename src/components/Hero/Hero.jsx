@@ -13,6 +13,7 @@ const Hero = () => {
   const transition = {type : 'spring' , duration : 2}
 
   let tablet = (window.innerWidth > 1440 ) ? false : true;
+  let mobile = (window.innerWidth <= 440 ) ? true : false;
   
 
   return (
@@ -26,7 +27,7 @@ const Hero = () => {
         <div className="the-best-ad">
 
           <motion.div
-          initial = {{left : '290px'}}
+          initial = {{left : (mobile === true) ? '220px' : '290px'}}
           whileInView = {{left : '8px'}}
           transition = {{...transition, type : 'tween'}}
           ></motion.div>
@@ -80,7 +81,7 @@ const Hero = () => {
 
         <motion.div 
         initial = {{right : '-1rem'}}
-        whileInView = {{right : '4rem'}}
+        whileInView = {(mobile === true) ? {right : '1rem'} : {right : '4rem'}}
         transition={transition}
         className="heart-rate">
           <img src={Heart} alt="Heart Image" />
